@@ -13,12 +13,12 @@ html, body {
   box-shadow: 0 0 50px rgba(0,0,0,1) inset;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  
 }
 
-body ::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
-
 
 #home {
 
@@ -91,11 +91,11 @@ Name {
 
 .star {
   position: absoloute;
-  animation: fall 2s linear infinite, dissapear 2s linear infinite, fade 3s infinite;
+  animation: fall 2s linear infinite, dissapear 2s linear infinite, fade 2s infinite;
   width: 0px;
   height: 10px;
   border-radius: 50px;
-  margin-left: 50vw;
+
 }
 
 .scan {
@@ -105,7 +105,8 @@ Name {
 }
 
 @keyframes dissapear {
-      0% {opacity:1;}
+    0% {opacity:0;}
+    50%{opacity:0.5;}
     100% {opacity:0;}
 }
 
@@ -113,6 +114,7 @@ Name {
     0% {transform: translateY(0vh);}
     100% {transform: translateY(100vh);}
 }
+
 
 #code {
   
